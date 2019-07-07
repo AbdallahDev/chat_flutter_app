@@ -14,6 +14,7 @@ class _MyAnimatedContainerState extends State<MyAnimatedContainer> {
   double _height = 50;
   Color _color = Colors.blue;
   BorderRadiusGeometry _borderRadius = BorderRadius.circular(50);
+  bool _tap = true;
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,22 @@ class _MyAnimatedContainerState extends State<MyAnimatedContainer> {
           onPressed: () {
             setState(() {
               final random = Random();
+
+//              switch (_tap) {
+//                case false:
+//                  {
+//                    _width = 100;
+//                    _height = 100;
+//                    _color = Colors.red;
+//                    _borderRadius = BorderRadius.circular(100);
+//                  }
+//                  break;
+//                default:
+//                  {_width = 100;
+//                  _height = 100;
+//                  _color = Colors.red;
+//                  _borderRadius = BorderRadius.circular(100);}
+//              }
 
               //change the width and the height randomly
               _width = random.nextInt(300).toDouble();
